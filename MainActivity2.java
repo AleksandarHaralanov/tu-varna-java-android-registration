@@ -11,7 +11,7 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 
-public class RegistrationDetailsActivity extends AppCompatActivity {
+public class MainActivity2 extends AppCompatActivity {
 
     private EditText serialNumberEditText;
     private EditText descriptionEditText;
@@ -91,7 +91,7 @@ public class RegistrationDetailsActivity extends AppCompatActivity {
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(RegistrationDetailsActivity.this, MainActivity3.class);
+                Intent intent = new Intent(MainActivity2.this, MainActivity3.class);
                 String serialNumber = serialNumberEditText.getText().toString().trim();
                 String result = statusCheckBox.getText().toString();
                 String defectDescription = descriptionEditText.getText().toString().trim();
